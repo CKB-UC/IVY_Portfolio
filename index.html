@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivy Dumalsin - Graphic Designer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-black font-sans">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <button onclick="scrollToSection('home')" class="text-2xl font-bold tracking-tight">
+                    IVY DUMALSIN
+                </button>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <button onclick="scrollToSection('home')" class="nav-link uppercase text-sm tracking-wider transition-colors" data-section="home">HOME</button>
+                    <button onclick="scrollToSection('about')" class="nav-link uppercase text-sm tracking-wider transition-colors" data-section="about">ABOUT</button>
+                    <button onclick="scrollToSection('experience')" class="nav-link uppercase text-sm tracking-wider transition-colors" data-section="experience">EXPERIENCE</button>
+                    <button onclick="scrollToSection('work')" class="nav-link uppercase text-sm tracking-wider transition-colors" data-section="work">WORK</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link uppercase text-sm tracking-wider transition-colors" data-section="contact">CONTACT</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden mt-4 pb-4 space-y-3 hidden">
+                <button onclick="scrollToSection('home')" class="block w-full text-left uppercase text-sm tracking-wider py-2 hover:text-gray-600">HOME</button>
+                <button onclick="scrollToSection('about')" class="block w-full text-left uppercase text-sm tracking-wider py-2 hover:text-gray-600">ABOUT</button>
+                <button onclick="scrollToSection('experience')" class="block w-full text-left uppercase text-sm tracking-wider py-2 hover:text-gray-600">EXPERIENCE</button>
+                <button onclick="scrollToSection('work')" class="block w-full text-left uppercase text-sm tracking-wider py-2 hover:text-gray-600">WORK</button>
+                <button onclick="scrollToSection('contact')" class="block w-full text-left uppercase text-sm tracking-wider py-2 hover:text-gray-600">CONTACT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl text-center">
+            <div class="mb-8">
+                <div class="w-48 h-48 mx-auto bg-gray-200 rounded-full mb-6 flex items-center justify-center">
+                    <span class="text-gray-400 text-sm">Photo Here</span>
+                </div>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+                IVY DUMALSIN
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-4 tracking-wide">
+                GRAPHIC DESIGNER
+            </p>
+            <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-8 italic">
+                "friends call me littlemonster - and i love it!"
+            </p>
+            <button onclick="scrollToSection('work')" class="inline-flex items-center space-x-2 border-2 border-black px-8 py-3 hover:bg-black hover:text-white transition-colors">
+                <span class="tracking-wider">VIEW WORK</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-black text-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 tracking-tight">ABOUT</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">What I Do</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <p>I specialize in document layout and work closely with designers to ensure that designs adhere to corporate format and style guidelines.</p>
+                        <p>I create draft concepts for assigned projects, including fonts, layout and format for client approval.</p>
+                        <p>I create page layouts including text and cell styles for designers' guide and use, format texts and other materials, and import copies using WordsFlow Pro to InDesign files.</p>
+                        <p>I love troubleshooting InDesign file issues and packaging final files for client submissions.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Software Skills</h3>
+                    <div id="skills-container" class="grid grid-cols-3 gap-8">
+                        <!-- Skill icons will be dynamically added by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 tracking-tight">EXPERIENCE</h2>
+            <div id="experience-container" class="space-y-12">
+                <!-- Experience items will be dynamically added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 tracking-tight">SELECTED WORK</h2>
+            
+            <!-- Company Work -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 tracking-wide">COMPANY PROJECTS</h3>
+                <div id="company-projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Company projects will be dynamically added by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Personal Work -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 tracking-wide">PERSONAL PROJECTS</h3>
+                <div id="personal-projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Personal projects will be dynamically added by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-black text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 tracking-tight">GET IN TOUCH</h2>
+            <p class="text-xl text-gray-300 mb-12">
+                Let's work together on your next project
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
+                <a href="mailto:ivydumalsin@gmail.com" class="flex items-center space-x-3 hover:text-gray-300 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span class="text-lg">ivydumalsin@gmail.com</span>
+                </a>
+                <a href="tel:+971569902661" class="flex items-center space-x-3 hover:text-gray-300 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span class="text-lg">+971 56 990 2661</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer 
+     <footer class="bg-white py-8 px-6 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto text-center text-gray-600 text-sm">
+            <p>© 2025 Ivy Dumalsin. All rights reserved.</p>
+        </div>
+    </footer> 
+    --> 
+
+    <!-- Project Gallery Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
+        <div id="project-modal-content" class="bg-white max-w-5xl w-full max-h-90vh overflow-y-auto relative">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </button>
+            
+            <div class="p-8">
+                <h3 id="modal-project-title" class="text-3xl font-bold mb-2"></h3>
+                <p id="modal-project-info" class="text-gray-600 mb-4"></p>
+                
+                <div id="modal-images-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                    <!-- Images will be dynamically added -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Single Image View Modal -->
+    <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-95 z-60 hidden items-center justify-center p-4">
+        <div id="image-modal-content" class="bg-white max-w-6xl w-full max-h-90vh relative flex items-center justify-center">
+            <button onclick="closeImageModal()" class="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </button>
+            
+            <div id="image-view-container" class="w-full h-80vh bg-gray-200 flex items-center justify-center">
+                <!-- Image will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
