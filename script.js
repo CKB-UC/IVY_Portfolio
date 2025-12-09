@@ -36,17 +36,16 @@ const experiences = [
     }
 ];
 
+// Company projects 
 const companyProjects = [
     { 
-        name: "PMBSRR Guidelines", 
+        name: "Prince Mohammed Bin Salman Royal Reserve", 
         client: "AECOM", 
         year: "2024", 
         type: "Project",
+        thumbnail: "images/company/PMBSRR cover.jpg", // Main thumbnail
         images: [
-            { id: 1, placeholder: "Cover Page" },
-            { id: 2, placeholder: "Interior Spread 1" },
-            { id: 3, placeholder: "Interior Spread 2" },
-            { id: 4, placeholder: "Detail Page" }
+            "images/company/PMBSRR cover.jpg"
         ]
     },
     { 
@@ -54,10 +53,9 @@ const companyProjects = [
         client: "AECOM", 
         year: "2024", 
         type: "Project",
+        thumbnail: "images/company/JHC Cover.jpg",
         images: [
-            { id: 1, placeholder: "Cover Design" },
-            { id: 2, placeholder: "Layout 1" },
-            { id: 3, placeholder: "Layout 2" }
+            "images/company/JHC Cover.jpg"
         ]
     },
     { 
@@ -65,9 +63,9 @@ const companyProjects = [
         client: "AECOM", 
         year: "2024", 
         type: "Project",
+        thumbnail: "images/company/USI cover.jpg",
         images: [
-            { id: 1, placeholder: "Title Page" },
-            { id: 2, placeholder: "Content Page" }
+            "images/company/USI cover.jpg"
         ]
     },
     { 
@@ -75,10 +73,11 @@ const companyProjects = [
         client: "AECOM", 
         year: "2024", 
         type: "Project",
+        thumbnail: "images/company/dubai-hills-cover.jpg",
         images: [
-            { id: 1, placeholder: "Master Plan" },
-            { id: 2, placeholder: "Details" },
-            { id: 3, placeholder: "Graphics" }
+            "images/company/dubai-hills-1.jpg",
+            "images/company/dubai-hills-2.jpg",
+            "images/company/dubai-hills-3.jpg"
         ]
     },
     { 
@@ -86,9 +85,10 @@ const companyProjects = [
         client: "AECOM", 
         year: "2023", 
         type: "Tender",
+        thumbnail: "images/company/neom-wind-cover.jpg",
         images: [
-            { id: 1, placeholder: "Proposal Cover" },
-            { id: 2, placeholder: "Technical Pages" }
+            "images/company/neom-wind-1.jpg",
+            "images/company/neom-wind-2.jpg"
         ]
     },
     { 
@@ -96,9 +96,10 @@ const companyProjects = [
         client: "AECOM", 
         year: "2023", 
         type: "Tender",
+        thumbnail: "images/company/neom-line-cover.jpg",
         images: [
-            { id: 1, placeholder: "Cover" },
-            { id: 2, placeholder: "Spreads" }
+            "images/company/neom-line-1.jpg",
+            "images/company/neom-line-2.jpg"
         ]
     },
     { 
@@ -106,9 +107,10 @@ const companyProjects = [
         client: "AECOM", 
         year: "2023", 
         type: "Tender",
+        thumbnail: "images/company/yas-island-cover.jpg",
         images: [
-            { id: 1, placeholder: "Main Cover" },
-            { id: 2, placeholder: "Interior" }
+            "images/company/yas-island-1.jpg",
+            "images/company/yas-island-2.jpg"
         ]
     },
     { 
@@ -116,51 +118,58 @@ const companyProjects = [
         client: "AECOM", 
         year: "2022", 
         type: "Project",
+        thumbnail: "images/company/housing-cover.jpg",
         images: [
-            { id: 1, placeholder: "Guidelines Cover" },
-            { id: 2, placeholder: "Content Layout" }
+            "images/company/housing-1.jpg",
+            "images/company/housing-2.jpg"
         ]
     }
 ];
 
+// UPDATED: Personal projects with actual image paths
 const personalProjects = [
     { 
         name: "S&A Serge Logo", 
         year: "2024",
+        thumbnail: "images/personal/serge-logo-cover.jpg",
         images: [
-            { id: 1, placeholder: "Logo Design" },
-            { id: 2, placeholder: "Variations" }
+            "images/personal/serge-logo-1.jpg",
+            "images/personal/serge-logo-2.jpg"
         ]
     },
     { 
         name: "Danzek Properties Logo & Marketing", 
         year: "2023",
+        thumbnail: "images/personal/danzek-cover.jpg",
         images: [
-            { id: 1, placeholder: "Brand Identity" },
-            { id: 2, placeholder: "Marketing Materials" }
+            "images/personal/danzek-1.jpg",
+            "images/personal/danzek-2.jpg"
         ]
     },
     { 
         name: "Civil & Civic Logo & Profile", 
         year: "2023",
+        thumbnail: "images/personal/civil-civic-cover.jpg",
         images: [
-            { id: 1, placeholder: "Logo" },
-            { id: 2, placeholder: "Company Profile" }
+            "images/personal/civil-civic-1.jpg",
+            "images/personal/civil-civic-2.jpg"
         ]
     },
     { 
         name: "Baey Bread & Homeshare Logo", 
         year: "2018",
+        thumbnail: "images/personal/baey-bread-cover.jpg",
         images: [
-            { id: 1, placeholder: "Logo Design" }
+            "images/personal/baey-bread-1.jpg"
         ]
     },
     { 
         name: "MiKonbini Logo & Marketing", 
         year: "2018",
+        thumbnail: "images/personal/mikonbini-cover.jpg",
         images: [
-            { id: 1, placeholder: "Branding" },
-            { id: 2, placeholder: "Marketing Kit" }
+            "images/personal/mikonbini-1.jpg",
+            "images/personal/mikonbini-2.jpg"
         ]
     }
 ];
@@ -183,7 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
 function renderSkills() {
     const container = document.getElementById('skills-container');
     
-    // Icon labels for each skill (Adobe/Microsoft style)
     const iconLabels = {
         indesign: 'Id',
         illustrator: 'Ai',
@@ -247,14 +255,22 @@ function renderPersonalProjects() {
     });
 }
 
+// UPDATED: Create project card with actual images
 function createProjectCard(project, index, type) {
     const div = document.createElement('div');
     div.className = 'project-card';
     div.onclick = () => openProjectModal(project);
     
+    // Use thumbnail or first image as preview
+    const previewImage = project.thumbnail || project.images[0];
+    
     div.innerHTML = `
         <div class="project-image">
-            <span class="text-gray-400 text-sm">Project Image</span>
+            <img src="${previewImage}" alt="${project.name}" class="w-full h-full object-cover" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div style="display:none;" class="w-full h-full flex items-center justify-center">
+                <span class="text-gray-400 text-sm">Image not found</span>
+            </div>
             <div class="project-overlay">
                 <svg class="zoom-icon text-white w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
@@ -280,7 +296,7 @@ function createProjectCard(project, index, type) {
     return div;
 }
 
-// Modal Functions
+// UPDATED: Modal with actual images
 function openProjectModal(project) {
     currentProject = project;
     const modal = document.getElementById('project-modal');
@@ -298,12 +314,16 @@ function openProjectModal(project) {
     
     // Clear and populate images
     grid.innerHTML = '';
-    project.images.forEach(image => {
+    project.images.forEach((imagePath, index) => {
         const imageDiv = document.createElement('div');
         imageDiv.className = 'gallery-thumbnail';
-        imageDiv.onclick = () => openImageModal(image);
+        imageDiv.onclick = () => openImageModal(imagePath);
         imageDiv.innerHTML = `
-            <span class="text-gray-400 text-sm text-center px-2">${image.placeholder}</span>
+            <img src="${imagePath}" alt="${project.name} ${index + 1}" class="w-full h-full object-cover"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div style="display:none;" class="w-full h-full flex items-center justify-center">
+                <span class="text-gray-400 text-sm">Image ${index + 1}</span>
+            </div>
         `;
         grid.appendChild(imageDiv);
     });
@@ -321,15 +341,17 @@ function closeProjectModal() {
     currentProject = null;
 }
 
-function openImageModal(image) {
-    currentImage = image;
+// UPDATED: Full size image modal
+function openImageModal(imagePath) {
+    currentImage = imagePath;
     const modal = document.getElementById('image-modal');
     const container = document.getElementById('image-view-container');
     
     container.innerHTML = `
-        <div class="text-center p-8">
-            <p class="text-gray-400 text-lg mb-4">${image.placeholder}</p>
-            <p class="text-gray-500 text-sm">Full Size Image Placeholder</p>
+        <img src="${imagePath}" alt="Full size view" class="max-w-full max-h-full object-contain"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div style="display:none;" class="text-center p-8">
+            <p class="text-gray-400 text-lg">Image could not be loaded</p>
         </div>
     `;
     
