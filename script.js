@@ -39,89 +39,150 @@ const experiences = [
 // Company projects 
 const companyProjects = [
     { 
-        name: "Prince Mohammed Bin Salman Royal Reserve", 
+        name: "PMBSRR Cover", 
         client: "AECOM", 
         year: "2024", 
-        type: "Project",
+        type: "Project Reports",
         thumbnail: "images/company/PMBSRR cover.jpg", // Main thumbnail
         images: [
             "images/company/PMBSRR cover.jpg"
         ]
     },
     { 
-        name: "Jeddah Historic Core", 
+        name: "Jeddah Historic Core Cover", 
         client: "AECOM", 
         year: "2024", 
-        type: "Project",
+        type: "Project Reports",
         thumbnail: "images/company/JHC Cover.jpg",
         images: [
             "images/company/JHC Cover.jpg"
         ]
     },
     { 
-        name: "Umm Suqeim Island CMP", 
+        name: "Umm Suqeim Island CMP Cover", 
         client: "AECOM", 
         year: "2024", 
-        type: "Project",
+        type: "Project Reports",
         thumbnail: "images/company/USI cover.jpg",
         images: [
             "images/company/USI cover.jpg"
         ]
     },
     { 
-        name: "Dubai Hills MP", 
+        name: "Dubai Hills MP Cover", 
         client: "AECOM", 
         year: "2024", 
-        type: "Project",
-        thumbnail: "images/company/dubai-hills-cover.jpg",
+        type: "Project Reports",
+        thumbnail: "images/company/emaar MBR DHE2 cover.jpg",
         images: [
-            "images/company/dubai-hills-1.jpg",
-            "images/company/dubai-hills-2.jpg",
-            "images/company/dubai-hills-3.jpg"
+            "images/company/emaar MBR DHE2 cover.jpg"
         ]
     },
     { 
-        name: "NEOM Wind Garden", 
-        client: "AECOM", 
-        year: "2023", 
-        type: "Tender",
-        thumbnail: "images/company/neom-wind-cover.jpg",
-        images: [
-            "images/company/neom-wind-1.jpg",
-            "images/company/neom-wind-2.jpg"
-        ]
-    },
-    { 
-        name: "NEOM Landscapes of The Line", 
-        client: "AECOM", 
-        year: "2023", 
-        type: "Tender",
-        thumbnail: "images/company/neom-line-cover.jpg",
-        images: [
-            "images/company/neom-line-1.jpg",
-            "images/company/neom-line-2.jpg"
-        ]
-    },
-    { 
-        name: "Yas Island Development Plan", 
-        client: "AECOM", 
-        year: "2023", 
-        type: "Tender",
-        thumbnail: "images/company/yas-island-cover.jpg",
-        images: [
-            "images/company/yas-island-1.jpg",
-            "images/company/yas-island-2.jpg"
-        ]
-    },
-    { 
-        name: "Client Housing Guidelines", 
+        name: "Al Wadi", 
         client: "AECOM", 
         year: "2022", 
-        type: "Project",
-        thumbnail: "images/company/housing-cover.jpg",
+        type: "Project Reports",
+        thumbnail: "images/company/al wadi.jpg",
         images: [
-            "images/company/housing-1.jpg",
-            "images/company/housing-2.jpg"
+            "images/company/al wadi.jpg"
+        ]
+    },
+    { 
+        name: "NEOM Wind Garden Cover", 
+        client: "AECOM", 
+        year: "2023", 
+        type: "Proposals",
+        thumbnail: "images/company/COVER - NEOM WG.jpg",
+        images: [
+            "images/company/COVER - NEOM WG.jpg"
+        ]
+    },
+    { 
+        name: "NEOM Landscapes of The Line Cover", 
+        client: "AECOM", 
+        year: "2023", 
+        type: "Proposals",
+        thumbnail: "images/company/COVER - NEOMLOTL.jpg",
+        images: [
+            "images/company/COVER - NEOMLOTL.jpg"
+        ]
+    },
+    { 
+        name: "Yas Island Development Plan Cover", 
+        client: "AECOM", 
+        year: "2023", 
+        type: "Proposals",
+        thumbnail: "images/company/COVER YAS ISLAND.jpg",
+        images: [
+            "images/company/COVER YAS ISLAND.jpg"
+        ]
+    },
+    { 
+        name: "Urban Centers Cover", 
+        client: "AECOM", 
+        year: "2023", 
+        type: "Proposals",
+        thumbnail: "images/company/COVER DM-UCDF.jpg",
+        images: [
+            "images/company/COVER DM-UCDF.jpg"
+        ]
+    },
+    { 
+        name: "MAKKAH Cover", 
+        client: "AECOM", 
+        year: "2021", 
+        type: "Proposals",
+        thumbnail: "images/company/COVER MAKKAH.jpg",
+        images: [
+            "images/company/COVER MAKKAH.jpg"
+        ]
+    },
+    { 
+        name: "Client Housing Guidelines Cover", 
+        client: "AECOM", 
+        year: "2022", 
+        type: "Proposals",
+        thumbnail: "images/company/ADHA OPTION 2_Page_1.jpg",
+        images: [
+            "images/company/ADHA OPTION 2_Page_1.jpg",
+            "images/company/ADHA OPTION 2_Page_2.jpg",
+            "images/company/ADHA OPTION 2_Page_3.jpg",
+            "images/company/ADHA OPTION 2_Page_4.jpg"
+        ]
+    },
+    { 
+        name: "Client Integrated Community Guidelines Cover", 
+        client: "AECOM", 
+        year: "2022", 
+        type: "Project Reports",
+        thumbnail: "images/company/ADHA covers_Page_1.jpg",
+        images: [
+            "images/company/ADHA covers_Page_1.jpg",
+            "images/company/ADHA covers_Page_2.jpg",
+            "images/company/ADHA covers_Page_3.jpg",
+            "images/company/ADHA covers_Page_4.jpg"
+        ]
+    },
+    { 
+        name: "Layout Samples", 
+        client: " ", 
+        year: "", 
+        type: "Layouts",
+        thumbnail: "images/company/1-3.jpg",
+        images: [
+            "images/company/1-3.jpg",
+            "images/company/1-4.jpg"
+        ]
+    },
+    { 
+        name: "Brochure Design", 
+        client: " ", 
+        year: "", 
+        type: "Layouts",
+        thumbnail: "images/company/layout sample.jpg",
+        images: [
+            "images/company/layout sample.jpg"
         ]
     }
 ];
