@@ -33,6 +33,18 @@ const experiences = [
         company: "Kier Dubai & Abu Dhabi",
         period: "2013 - 2016",
         description: "Designed and produced proposals for major construction projects across the UAE."
+    },
+    {
+        title: "Proposals & Print Production Coordinator",
+        company: "DreamsCreative, Abu Dhabi",
+        period: "2010 - 2013",
+        description: "Train proposal coordinators in project sheet automation using InDesign Data merge."
+    },
+    {
+        title: "Graphic Design Coordinator",
+        company: "SUSCA, Abu Dhabi",
+        period: "2008 - 2010",
+        description: "Work and collaborate with superiors and identified team to prepare presentations, and pre-qualifications."
     }
 ];
 
